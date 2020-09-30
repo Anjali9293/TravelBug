@@ -1,3 +1,9 @@
 .home-page {
     background-image: url ("https://images.pexels.com/photos/1591375/pexels-photo-1591375.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
 }
+.portfolioCard {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+}
