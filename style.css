@@ -6,4 +6,24 @@
     margin-bottom: 10px;
     padding: 10px;
 }
+
+.col-weather-day {
+    position: relative;
+    width: 20%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+
+/* must be last on page unless we want to add mobile styles*/
+@media (max-width: 768px) {
+    .col-weather-day {
+        flex: 0 0 100%;
+    }
+
+/*other mobile styles if we want*/
+
+
+
 }
