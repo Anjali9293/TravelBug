@@ -33,6 +33,8 @@ function createListItem(cityName) {
     document.querySelector(".cities").appendChild(node);
 }
 
+
+
 createSidebarFromHistory();
 
 searchButton.addEventListener("click", searchCity);
