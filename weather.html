@@ -9,109 +9,99 @@
     <title></title>
 </head>
 <body>
+  <nav class="navbar navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Travel Bug</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="weather.html">Weather<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hotel.html">Hotels</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Where to?" id="search-Input">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchButton">Search</button>
+      </form>
+    </div>
+  </nav>
+
     
-    <nav class="navbar navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Travel Bug</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="weather.html">Weather<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="hotel.html">Hotels</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" id="search-Input">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchButton">Search</button>
-          </form>
-        </div>
-      </nav>
-      <br></br><br></br>   
-      <div class="container">
-        <div class="row ">
-          <div class="col-lg-2"> 
-            <ul class="list-group cities"></ul>
-          </div> 
-          <div class="col-lg-10">
-            <div class="container">
-              <div class="row justify-content-between">
-                <div class="col-weather-day">
-                  <div class="card portfolioCard">
-                    <img src="" class="card-image" style="margin: 0 10px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Day 1</h5>
-                      <p class="card-temp">Temp:</p>
-                      <p class="card-Index">Index:</p>
-                      <p class="card-Humidity">Humidity:</p>
-                    </div>
-                  </div>
-                </div>  
-                <div class="col-weather-day">
-                  <div class="card portfolioCard">
-                    <img src="" class="card-image" style="margin: 0 10px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Day 2</h5>
-                      <p class="card-temp">Temp:</p>
-                      <p class="card-Index">Index:</p>
-                      <p class="card-Humidity">Humidity:</p>
-                    </div>
-                  </div>
-                </div>  
-                <div class="col-weather-day">
-                  <div class="card portfolioCard">
-                    <img src="" class="card-image" style="margin: 0 10px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Day 3</h5>
-                      <p class="card-temp">Temp:</p>
-                      <p class="card-Index">Index:</p>
-                      <p class="card-Humidity">Humidity:</p>
-                    </div>
-                  </div>
-                </div>  
-                <div class="col-weather-day">
-                  <div class="card portfolioCard">
-                    <img src="" class="card-image" style="margin: 0 10px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Day 4</h5>
-                      <p class="card-temp">Temp:</p>
-                      <p class="card-Index">Index:</p>
-                      <p class="card-Humidity">Humidity:</p>
-                    </div>
-                  </div>
-                </div>  
-                <div class="col-weather-day">
-                  <div class="card portfolioCard">
-                    <img src="" class="card-image" style="margin: 0 10px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Day 5</h5>
-                      <p class="card-temp">Temp:</p>
-                      <p class="card-Index">Index:</p>
-                      <p class="card-Humidity">Humidity:</p>
-                    </div>
-                  </div>
-                </div>  
+  <br></br><br></br>   
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-2"> 
+        <ul class="list-group cities"></ul>
+      </div> 
+      <div class="col-lg-10">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-weather-day">
+              <div class="card portfolioCard">
+                <img src="" class="card-image" style="margin: 0 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Day 1</h5>
+                  <p class="card-temp">Temp:</p>
+                  <p class="card-Index">Index:</p>
+                  <p class="card-Humidity">Humidity:</p>
+                </div>
               </div>
-            </div>    
+            </div>  
+            <div class="col-weather-day">
+              <div class="card portfolioCard">
+                <img src="" class="card-image" style="margin: 0 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Day 2</h5>
+                  <p class="card-temp">Temp:</p>
+                  <p class="card-Index">Index:</p>
+                  <p class="card-Humidity">Humidity:</p>
+                </div>
+              </div>
+            </div>  
+            <div class="col-weather-day">
+              <div class="card portfolioCard">
+                <img src="" class="card-image" style="margin: 0 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Day 3</h5>
+                  <p class="card-temp">Temp:</p>
+                  <p class="card-Index">Index:</p>
+                  <p class="card-Humidity">Humidity:</p>
+                </div>
+              </div>
+            </div>  
+            <div class="col-weather-day">
+              <div class="card portfolioCard">
+                <img src="" class="card-image" style="margin: 0 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Day 4</h5>
+                  <p class="card-temp">Temp:</p>
+                  <p class="card-Index">Index:</p>
+                  <p class="card-Humidity">Humidity:</p>
+                </div>
+              </div>
+            </div>  
+            <div class="col-weather-day">
+              <div class="card portfolioCard">
+                <img src="" class="card-image" style="margin: 0 10px;">
+                <div class="card-body">
+                  <h5 class="card-title">Day 5</h5>
+                  <p class="card-temp">Temp:</p>
+                  <p class="card-Index">Index:</p>
+                  <p class="card-Humidity">Humidity:</p>
+                </div>
+              </div>
+            </div>  
           </div>
-        </div>  
-      </div>  
+        </div>    
+      </div>
+    </div>  
+  </div>  
               
-              
-               
-                
-              
-              
-            
-          
-          
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
