@@ -24,7 +24,7 @@ function getSearchHistory() {
 function createSidebarFromHistory() {
     searchHistory.forEach(createListItem);
 }
-//This function creates a li element in HTMl and 
+//This function creates a li element in HTMl and appends it to cities ul tag
 function createListItem(cityName) {
     var node = document.createElement("li");
     node.setAttribute("class", "list-group-item");
