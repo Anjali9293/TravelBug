@@ -11,20 +11,20 @@ function searchCity(event) {
     addToSearchHistory(input);
     createListItem(input);
 }
-//This function pushes user inputs to serachhistory and add them to the local storage
+
 function addToSearchHistory(cityName) {
     searchHistory.push(cityName);
     localStorage.searchHistory = JSON.stringify(searchHistory);
 }
-//This function returns an object stored in local storage
+
 function getSearchHistory() {
     return JSON.parse(localStorage.searchHistory || "[]");
 }
-//This function goes through an array of strings in local storage and calls createrlistItem function
+
 function createSidebarFromHistory() {
     searchHistory.forEach(createListItem);
 }
-//This function creates a li element in HTMl and 
+
 function createListItem(cityName) {
     var node = document.createElement("li");
     node.setAttribute("class", "list-group-item");
