@@ -77,7 +77,7 @@ function getHotelData(city) {
                             <p class="card-text">Hotel Address: ${details.address}</p>
                             <p class="rating"> Star Rating: ${details.rating}</p>
                             <p>Top Review: ${review}</p>
-                            <a target="_new" href="https://www.google.com/travel/hotels/${details.address_obj.city}?q=${details.name}+${details.address_obj.street1}" class="btn btn-primary link">Hotel Link</a>
+                            <a target="_new" href="https://www.google.com/travel/hotels/${details.address_obj.city}?q=${details.name}+${details.address_obj.street1}" class="target">Hotel Link</a>
                         </div>
                     </div>
                 </div>

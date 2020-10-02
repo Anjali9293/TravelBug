@@ -106,7 +106,7 @@ function getNearbyPlaces(lat, lon) {
                             <p class="card-text">Address: ${attraction.address}</p>
                             <p class="rating"> Phonenumber: ${attraction.phone_number || "N/A"}</p>
                             <p>Type: ${attraction.types.join(', ')}</p>
-                            <a target="_new" href="${attraction.website}" class="btn btn-primary link">Attraction Link</a>
+                            <a target="_new" href="${attraction.website}" class="target">Attraction Link</a>
                         </div>
                     </div>
                 </div>
