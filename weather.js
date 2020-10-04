@@ -34,10 +34,10 @@ function createSidebarFromHistory() {
 }
 
 function createListItem(cityName) {
-    var node = document.createElement("button");
-    var closeSpan = document.createElement("span")
-    node.appendChild(closeSpan);
+
+    var node = document.createElement("li");
     node.setAttribute("class", "list-group-item");
+    node.setAttribute("style", "word-wrap: break-word;");
     var textnode = document.createTextNode(cityName);
     node.appendChild(textnode);
     node.addEventListener("click", function() {
@@ -45,6 +45,22 @@ function createListItem(cityName) {
     });
     document.querySelector(".cities").appendChild(node);
 }
+
+function clearAll (){
+    var clearBtn = document.createElement("button");
+    clearBtn.setAttribute("class", "btn btn-info active");
+    clearBtn.setAttribute("style", "margin: auto; width: 100%;");
+    clearBtn.setAttribute("id", "clear");
+    clearBtn.innerHTML = "Clear All";
+    document.querySelector(".cities").appendChild(clearBtn);
+    clearBtn.addEventListener("click", function() {
+        var bye = localStorage.clear();
+        var emptyList = $("ul.cities li").not("#clear").remove();
+    });
+}
+clearAll();
+
+
 
 function handleSideBarOnClick(name) {
     getweatherdata(name);
