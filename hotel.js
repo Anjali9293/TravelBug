@@ -50,7 +50,7 @@ function createListItem(cityName) {
 
 // Clear search history button
 function clearSearch (){
-    var clearBtn = $(`<button id="clear" class="btn btn-info active" style="margin:auto; width:100%;">Clear All</button>`);
+    var clearBtn = $(`<button class="btn btn-info active" style="margin:auto; width:100%;">Clear All</button>`);
     $(clearBtn).click(function() {
         var bye = localStorage.clear();
         var emptyList = $("ul.cities li").remove();
