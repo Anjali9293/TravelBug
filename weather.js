@@ -46,20 +46,16 @@ function createListItem(cityName) {
     document.querySelector(".cities").appendChild(node);
 }
 
-function clearAll (){
-    var clearBtn = document.createElement("button");
-    clearBtn.setAttribute("class", "btn btn-info active");
-    clearBtn.setAttribute("style", "margin: auto; width: 100%;");
-    clearBtn.setAttribute("id", "clear");
-    clearBtn.innerHTML = "Clear All";
-    document.querySelector(".cities").appendChild(clearBtn);
-    clearBtn.addEventListener("click", function() {
+// Clear search history button
+function clearSearch (){
+    var clearBtn = $(`<button id="clear" class="btn btn-info active" style="margin:auto; width:100%;">Clear All</button>`);
+    $(clearBtn).click(function() {
         var bye = localStorage.clear();
-        var emptyList = $("ul.cities li").not("#clear").remove();
+        var emptyList = $("ul.cities li").remove();
     });
+    clearBtn.appendTo(".cities");
 }
-clearAll();
-
+clearSearch();
 
 
 function handleSideBarOnClick(name) {
