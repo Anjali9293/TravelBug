@@ -5,9 +5,8 @@ var searchHistory = getSearchHistory();
 //This function is initiated by clicking the search button that takes user input.
 function searchCity(event) {
     event.preventDefault(); 
-    var input = userInput.value;
-    if (!input || input == "") return;
     var input = userInput.val();
+    if (!input || input == "") return;
     addToSearchHistory(input);
     window.location = "weather.html";
 }
