@@ -2,16 +2,9 @@ var rapidAPIHeaders = {
     "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
     "x-rapidapi-key": "ee8fb8825dmsh08b2987afec24dbp1f4e01jsn86669005cf0d"
 };
-var apiKey = "002d0ebbeamsh799a5b869925f5cp1155fcjsnb19952ec579f";
 var userInput = document.getElementById("search-Input");
 var searchButton = document.getElementById("searchButton");
 var searchHistory = getSearchHistory();
-var card = {
-    hotelName: document.querySelectorAll(".card-title"),
-    hotelAddress: document.querySelectorAll(".card-text"),
-    hotelRating: document.querySelectorAll(".rating"),
-    hotelLink: document.querySelectorAll(".link")
-}
 //This function is initiated by clicking the search button that takes user input.
 function searchCity(event) {
     event.preventDefault();
@@ -57,8 +50,6 @@ function clearSearch (){
     });
     clearBtn.appendTo(".cities");
 }
-clearSearch();
-
 
 function handleSideBarOnClick(name) {
 	getHotelData(name);
@@ -73,10 +64,11 @@ function getHotelData(city) {
         "method": "GET",
         "headers": rapidAPIHeaders
     }).done(function(response) {
+        console.log(response);
         let hotels = response.data.filter(function(obj) {
             return obj.result_type == "lodging";
         }) 
-        $('.city').text(hotels[0].result_object.address_obj.city);
+        $('.city').text(hotels[2].result_object.address_obj.city);
         hotels.forEach(function(hotel) {
             const details = hotel.result_object;
             const review = hotel.review_snippet.snippet;
@@ -100,5 +92,6 @@ function getHotelData(city) {
 }
 
 createSidebarFromHistory();
+clearSearch();
 
 searchButton.addEventListener("click", searchCity);

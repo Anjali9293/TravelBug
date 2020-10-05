@@ -3,7 +3,6 @@ var rapidAPIHeaders = {
     "x-rapidapi-host": "trueway-places.p.rapidapi.com",
     "x-rapidapi-key": "ee8fb8825dmsh08b2987afec24dbp1f4e01jsn86669005cf0d"
 };
-var apiKey = "e854039facmshf240de781c376e5p1fdb86jsn66c280925862";
 var WeatherAPIKey = "555f0f1cc17650cb7069ee6104be4ed1";
 var userInput = document.getElementById("search-Input");
 var searchButton = document.getElementById("searchButton");
@@ -50,8 +49,8 @@ function createListItem(cityName) {
 function clearSearch (){
     var clearBtn = $(`<button class="btn btn-info active" style="margin:auto; width:100%;">Clear All</button>`);
     $(clearBtn).click(function() {
-        var bye = localStorage.clear();
-        var emptyList = $("ul.cities li").remove();
+        localStorage.clear();
+        $("ul.cities li").remove();
     });
     clearBtn.appendTo(".cities");
 }
@@ -72,8 +71,9 @@ function getweatherdata(name) {
         .then(function(response) {
             $('.city').text(response.city.name);
             getNearbyPlaces(response.city.coord.lat, response.city.coord.lon);
+            console.log(response);
             for (var i = 0; i < 5; i++) {
-                let forecastIndex = ((i + 1) * 8) - 5; // to get the midday index of each day
+                let forecastIndex = ((i + 1) * 8) - 3; // to get the midday index of each day
                 let forecast = response.list[forecastIndex];
                 let forecastDate = moment(currentDay, "L")
                     .add((i + 1), 'days')
