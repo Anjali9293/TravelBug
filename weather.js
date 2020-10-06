@@ -1,7 +1,7 @@
 const currentDay = moment().format('L');
 var rapidAPIHeaders = {
     "x-rapidapi-host": "trueway-places.p.rapidapi.com",
-    "x-rapidapi-key": "ee8fb8825dmsh08b2987afec24dbp1f4e01jsn86669005cf0d"
+    "x-rapidapi-key": "ad49f992bemshb5764257686cf8cp111ac3jsnc8067a34dba4"
 };
 var WeatherAPIKey = "555f0f1cc17650cb7069ee6104be4ed1";
 var userInput = document.getElementById("search-Input");

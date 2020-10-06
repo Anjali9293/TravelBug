@@ -1,6 +1,6 @@
 var rapidAPIHeaders = {
     "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
-    "x-rapidapi-key": "ee8fb8825dmsh08b2987afec24dbp1f4e01jsn86669005cf0d"
+    "x-rapidapi-key": "ad49f992bemshb5764257686cf8cp111ac3jsnc8067a34dba4"
 };
 var userInput = document.getElementById("search-Input");
 var searchButton = document.getElementById("searchButton");
