@@ -3,6 +3,9 @@
 <h2>Description</h2>
 <p>TravelBug is a travel app that allows the user to search for the weather, attractions and hotels from a city of their choice.</p>
 
+<h2>Deployed Link</h2>
+<a href="https://klsybthrst.github.io/TravelBug/" target="_blank">Travel Bug</a>
+
 <h2>Contributor</h2>
 <ul>
   <li>Jessica Zonta</li>
