@@ -1,41 +1,80 @@
-<h1>TravelBug</h1>
+# TravelBug
 
-<h2>Description</h2>
-<p>TravelBug is a travel app that allows the user to search for the weather, attractions and hotels from a city of their choice.</p>
+## Description
 
-<h2>Deployed Link</h2>
-<a href="https://klsybthrst.github.io/TravelBug/" target="_blank">Travel Bug</a>
+TravelBug is a travel app that allows the user to search for the weather, attractions and hotels from a city of their choice.
 
-<h2>Contributor</h2>
-<ul>
-  <li>Jessica Zonta</li>
-  <li>Anjali Pant</li>
-  <li>Garman Kwan</li>
-  <li>Farhin Chowdhury</li>
-  <li>Kelsey Bathurst</li>
-</ul>
+## Table of Contents
 
-<h2>Languages and Frameworks</h2>
-<ul>
-  <li>CSS</li>
-  <li>HTML</li>
-  <li>JavaScript</li>
-  <li>jQuery</li>
-  <li>Bootstrap</li>
-  <li>Moment</li>
-</ul>  
+* [Technologies](#technologies)
+* [Installation](#installation)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [License](#license)
+* [Questions](#questions)
 
-<h2>Api</h2>
-<ul>
-  <li>Trip Advisor - Hotels</li>
-  <li>True Way - Attractions</li>
-  <li>Open Weather - Forecast</li>
-</ul>
+## Technologies
 
-<h2>Screenshots</h2>
-<img width="1363" alt="Screen Shot 2020-10-07 at 6 30 56 PM" src="https://user-images.githubusercontent.com/70531552/95394897-68871a80-08cb-11eb-8785-06631ed979ec.png">
-<img width="1310" alt="Screen Shot 2020-10-07 at 6 31 11 PM" src="https://user-images.githubusercontent.com/70531552/95394911-6de46500-08cb-11eb-823a-69578e3761fe.png">
-<img width="1383" alt="Screen Shot 2020-10-07 at 6 31 24 PM" src="https://user-images.githubusercontent.com/70531552/95394915-6fae2880-08cb-11eb-9128-ff0eb02a974a.png">
+- CSS
+- HTML
+- JavaScript
+- jQuery
+- Bootstrap
+- Moment
 
-<h2>Roadmap</h2>
-<p>Moving forward we would like to add the ability to directly book on our app, provide flight information and provide the option to select how many dates to see regarding weather. We would like to fix any API call delays and limits. Finally improving our CSS skills would help us create a more memorable user experience</p>
+## Installation
+
+Application uses 3 different API's to pull necessary information as listed below:
+
+Trip Advisor - Hotels 
+![Trip Advisor](https://rapidapi.com/apidojo/api/tripadvisor1)
+True Way - Attractions
+![True Way](https://rapidapi.com/trueway/api/trueway-places)
+Open Weather - Forecast
+![Open Weather](https://rapidapi.com/community/api/open-weather-map)
+
+## Usage
+
+* Home page allows the user to enter the desired travel destination.
+
+![Enter Destination](images/travelbug0.png)
+
+* Once the destination is selected, the application displays weather forecast for next 5 consecutive days as well as displays the top attraction around the selected destination.
+
+![Weather Forecast](images/travelbug1.png)
+
+Final page displays the hotels around the area along with a google link to book the rooms.
+
+![Hotels](images/travelbug2.png)
+
+## Deployment
+
+Below is a link to the deployed application:
+
+![Deployed Link](https://klsybthrst.github.io/TravelBug/)
+
+## Credits
+
+- Anjali Pant
+- Jessica Zonta
+- Garman Kwan
+- Farhin Chowdhury
+- Kelsey Bathurst
+
+## License 
+
+```
+Copyright 2020 <Anjali Pant>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+## Questions
+
+For more questions about this project, feel free to view the github repository
+
+- [GitHub](https://github.com/Anjali9293/TravelBug)
+
