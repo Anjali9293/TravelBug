@@ -51,7 +51,7 @@ Final page displays the hotels around the area along with a google link to book 
 
 Below is a link to the deployed application:
 
-![Deployed Link](https://klsybthrst.github.io/TravelBug/)
+[Deployed Link](https://klsybthrst.github.io/TravelBug/)
 
 ## Credits
 
